@@ -7,6 +7,7 @@ a2 = true
 
 let x2 : string
 x2 = a2 as string
+//或者
 // x2 = <string>a2
 console.log(typeof x2);//a污染了x，导致x不是string 而是boolean
 
