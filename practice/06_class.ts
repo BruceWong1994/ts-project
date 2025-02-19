@@ -5,12 +5,12 @@ class Person {
     }
 }
 let me = new Person('bruce',31);
-// me.info();
+me.info();
 
 class Student extends Person {
     constructor(public name:string,public age:number,public grade:string){
         super(name,age)
-        this.grade = grade
+        // this.grade = grade
     }
     
     override info(){
@@ -18,9 +18,9 @@ class Student extends Person {
     }
 }
 let xiaoli = new Student('小丽',16,'初三')
-// xiaoli.info();
+xiaoli.info();
 
-class OtherStu extends Person {
+class StudentDetails extends Person {
     constructor(name:string, age:number, public detail:string){
         super(name,age)
     }
@@ -29,5 +29,5 @@ class OtherStu extends Person {
     }
 }
 
-const OS = new OtherStu('李梅',13,'期末时获得了三好学生')
-// OS.study()
+const SD = new StudentDetails('李梅',13,'期末时获得了三好学生')
+SD.study()
