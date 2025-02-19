@@ -34,4 +34,4 @@ class OtherStu extends Person {
     }
 }
 const OS = new OtherStu('李梅', 13, '期末时获得了三好学生');
-OS.study();
+// OS.study()
