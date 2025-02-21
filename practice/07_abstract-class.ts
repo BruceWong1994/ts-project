@@ -1,7 +1,7 @@
 abstract class Package {
     constructor(public weight:number){}
-    abstract calculate():number
-    printPrice(){
+    abstract calculate():number //抽象方法
+    printPrice(){   //具体方法
         console.log(`这个包裹重${this.weight}kg,共收取运输费用${this.calculate()}`);
     }
 }
