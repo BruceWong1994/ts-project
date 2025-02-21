@@ -12,12 +12,12 @@ class User implements UserInterface {
         public name:string,
         public age:number
     ){}
-    speak(n: number) {
+    speak(n: number):void {
         for (let index = 0; index < n; index++) {
             console.log(`我叫${this.name},我今年${this.age},这是第${index}个`); 
         }
     }
-    info(x:number) {
+    info(x:number):void {
         console.log(`这是${x}`);
     }
 }

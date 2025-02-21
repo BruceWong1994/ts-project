@@ -11,3 +11,5 @@ if(typeof a3 === 'string'){
 }else{
     console.log(a3);
 }
+
+type nnn = number & string  //nnn就是never类型

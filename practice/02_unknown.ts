@@ -14,7 +14,9 @@ let x2 : string
 x2 = a2 as string
 //或者
 // x2 = <string>a2
+
 console.log(typeof x2);//a2污染了x2，导致x2不是string 而是boolean  输出结果：boolean
+
 
 a2 = 'hhh'
 // console.log((<string>a2).toUpperCase());

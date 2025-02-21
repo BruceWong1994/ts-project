@@ -1,5 +1,5 @@
 //type类型
-type Status = number | string
+type Status = number | string //联合类型
 
 let printStatus = (data:Status):void => {
     console.log(data);
